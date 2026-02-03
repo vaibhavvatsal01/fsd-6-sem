@@ -1,4 +1,11 @@
 const fs=require('fs');
-//fs.writeFileSync("./abes.txt","hello abes college")
-const res=fs.readFileSync("./abes.txt","utf-8");
-console.log(res);
+//fs.writeFile("./abes.txt","helina ne ki rab se fariyad",()=>{});
+
+fs.readFile("./abes.txt","utf-8",(err,res)=>{
+    if(err){
+        console.log("error",err);
+    }else{
+        console.log(res);
+    }
+});
+
