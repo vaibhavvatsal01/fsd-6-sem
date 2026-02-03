@@ -16,4 +16,11 @@ const fs=require('fs');
 //         console.log("file appended successfully");
 //     }
 // });       
-fs.cpSync("./abes.txt","./aa1.txt");
+// fs.cpSync("./abes.txt","./aa1.txt");
+fs.cp("./abes.txt","./aa2.txt",(err)=>{
+    if(err){
+        console.log("error",err);
+    } else{
+        console.log("file copied successfully");
+    }       
+});
